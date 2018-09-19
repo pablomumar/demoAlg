@@ -1,0 +1,78 @@
+.Toolbar{
+    height: 54px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.Toolbar ul{
+    height: 100%;
+}
+
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.Item {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.Item a{
+    color: blanchedalmond;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.Item a:hover, .Item a:active, .Item a.active{
+    color: white;
+}
+
+@media (min-width: 500px){
+    .Item {
+        margin: 0;
+        display: flex;
+        width: auto;
+        align-items: center;
+    }
+
+    .Item a{
+        color: white;
+        height: 100%;
+        padding: 16px 30px;
+    }
+
+    .Item a:hover, .Item a:active, .Item a.active{
+        background-color: lightblue;
+        color: white;
+    }
+
+    .NavigationItems{
+        flex-flow: row;
+    }
+}
+
+@media (max-width: 499px){
+    .DesktopOnly{
+        display: none;
+    }
+}

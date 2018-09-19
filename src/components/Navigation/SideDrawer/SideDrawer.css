@@ -1,0 +1,79 @@
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: white;
+    padding: 32px 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.Item {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    height: max-content;
+    width: 100%;
+}
+
+.Item a{
+    color: deepskyblue;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.Item a:hover, .Item a:active, .Item a.active{
+    color: black;
+}
+
+@media (min-width: 500px){
+    .SideDrawer {
+        display: none;
+    }
+
+    .Item {
+        margin: 0;
+        display: flex;
+        width: auto;
+        align-items: center;
+    }
+
+    .Item a{
+        color: white;
+        height: 100%;
+        padding: 16px 30px;
+    }
+
+    .Item a:hover, .Item a:active, .Item a.active{
+        background-color: lightblue;
+        color: white;
+    }
+
+    .NavigationItems{
+        flex-flow: row;
+    }
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close{
+    transform: translateX(-100%);
+}
