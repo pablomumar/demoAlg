@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: deepskyblue;
+    background-color: rgba(0,0,0,.75);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@
     }
 
     .Item a:hover, .Item a:active, .Item a.active{
-        background-color: lightblue;
+        background-color: rgba(0,0,0, .3);
         color: white;
     }
 

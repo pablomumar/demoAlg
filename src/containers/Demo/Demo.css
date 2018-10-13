@@ -1,0 +1,56 @@
+.contentDemo{
+    padding: 45px 120px;
+    align-items: center;
+}
+
+.inputDemo{
+    width: 94%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-color: #40A4C8;
+    margin-bottom: 50px;
+}
+
+.contentFilms{
+    width: 100%;
+    display: inline-flex;
+}
+
+.allFilms{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recomFilms{
+    width: 30%;
+}
+.w70{
+    width: 75%;
+    display: inline-block;
+}
+.w30{
+    width: 25%;
+    display: inline-block;
+}
+
+@media (max-width: 1024px){
+    .contentDemo{
+        padding: 45px 100px;
+    }
+}
+@media (max-width: 920px){
+    .contentDemo{
+        padding: 40px 80px;
+    }
+}
+@media (max-width: 800px){
+    .contentDemo{
+        padding: 30px 60px;
+    }
+}
+@media (max-width: 640px){
+    .contentDemo{
+        padding: 25px 40px;
+    }
+}

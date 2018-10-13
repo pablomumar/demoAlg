@@ -1,0 +1,25 @@
+.contentMain{
+    padding: 45px 120px;
+    align-items: center;
+}
+
+@media (max-width: 1024px){
+    .contentMain{
+        padding: 45px 100px;
+    }
+}
+@media (max-width: 920px){
+    .contentMain{
+        padding: 40px 80px;
+    }
+}
+@media (max-width: 800px){
+    .contentMain{
+        padding: 30px 60px;
+    }
+}
+@media (max-width: 640px){
+    .contentMain{
+        padding: 25px 40px;
+    }
+}

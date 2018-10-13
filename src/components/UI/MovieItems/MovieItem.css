@@ -1,0 +1,25 @@
+.mainItem{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.mainItem a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.mainItem:hover{
+    background-color: #efefef;
+    transition-duration: 500ms;
+    box-shadow: #eee 0 0 5px;
+}
+
+.mainItem h5{
+    max-width: 180px;
+    line-break: normal;
+    text-align: center;
+}
+
